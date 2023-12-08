@@ -1,0 +1,17 @@
+C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Infrasturucture\bin\Debug\net8.0\Exam.Infrasturucture.deps.json
+C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Infrasturucture\bin\Debug\net8.0\Exam.Infrasturucture.dll
+C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Infrasturucture\bin\Debug\net8.0\Exam.Infrasturucture.pdb
+C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Infrasturucture\obj\Debug\net8.0\Exam.Infrasturucture.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Infrasturucture\obj\Debug\net8.0\Exam.Infrasturucture.AssemblyInfoInputs.cache
+C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Infrasturucture\obj\Debug\net8.0\Exam.Infrasturucture.AssemblyInfo.cs
+C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Infrasturucture\obj\Debug\net8.0\Exam.Infrasturucture.csproj.CoreCompileInputs.cache
+C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Infrasturucture\obj\Debug\net8.0\Exam.Infrasturucture.dll
+C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Infrasturucture\obj\Debug\net8.0\refint\Exam.Infrasturucture.dll
+C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Infrasturucture\obj\Debug\net8.0\Exam.Infrasturucture.pdb
+C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Infrasturucture\obj\Debug\net8.0\ref\Exam.Infrasturucture.dll
+C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Infrasturucture\bin\Debug\net8.0\Exam.Application.dll
+C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Infrasturucture\bin\Debug\net8.0\Exam.Domain.dll
+C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Infrasturucture\bin\Debug\net8.0\Exam.Application.pdb
+C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Infrasturucture\bin\Debug\net8.0\Exam.Domain.pdb
+C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Infrasturucture\obj\Debug\net8.0\Exam.Infrasturucture.csproj.AssemblyReference.cache
+C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Infrasturucture\obj\Debug\net8.0\Exam.Infrasturucture.csproj.CopyComplete

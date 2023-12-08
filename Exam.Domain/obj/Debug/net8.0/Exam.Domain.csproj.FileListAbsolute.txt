@@ -1,0 +1,11 @@
+C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Domain\bin\Debug\net8.0\Exam.Domain.deps.json
+C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Domain\bin\Debug\net8.0\Exam.Domain.dll
+C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Domain\bin\Debug\net8.0\Exam.Domain.pdb
+C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Domain\obj\Debug\net8.0\Exam.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Domain\obj\Debug\net8.0\Exam.Domain.AssemblyInfoInputs.cache
+C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Domain\obj\Debug\net8.0\Exam.Domain.AssemblyInfo.cs
+C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Domain\obj\Debug\net8.0\Exam.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Domain\obj\Debug\net8.0\Exam.Domain.dll
+C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Domain\obj\Debug\net8.0\refint\Exam.Domain.dll
+C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Domain\obj\Debug\net8.0\Exam.Domain.pdb
+C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Domain\obj\Debug\net8.0\ref\Exam.Domain.dll
