@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Exam.Application.Migrations
 {
     [DbContext(typeof(ExamDbContext))]
-    [Migration("20231208154954_mig1")]
+    [Migration("20231210170006_mig1")]
     partial class mig1
     {
         /// <inheritdoc />
@@ -36,28 +36,38 @@ namespace Exam.Application.Migrations
                     b.Property<DateTime>("DateOfExam")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("LessonCode")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                    b.Property<int>("LessonId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("LessonId1")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<decimal>("Result")
                         .HasColumnType("decimal(5,2)");
 
-                    b.Property<decimal>("StudentNumber")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<int>("StudentId")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("LessonId1");
+
+                    b.HasIndex("StudentId");
 
                     b.ToTable("ClassExam");
                 });
 
             modelBuilder.Entity("Exam.Domain.Etities.Lesson", b =>
                 {
-                    b.Property<string>("LessonCode")
+                    b.Property<string>("Id")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<decimal>("ClassNumber")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<int>("ClassNumber")
+                        .HasColumnType("int");
+
+                    b.Property<string>("LessonCode")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("TeacherName")
                         .IsRequired()
@@ -71,33 +81,59 @@ namespace Exam.Application.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("LessonCode");
+                    b.HasKey("Id");
+
+                    b.HasIndex("LessonCode")
+                        .IsUnique();
 
                     b.ToTable("Lessons");
                 });
 
             modelBuilder.Entity("Exam.Domain.Etities.Student", b =>
                 {
-                    b.Property<int>("StudentNumber")
+                    b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("StudentNumber"));
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<decimal>("ClassNumber")
-                        .HasColumnType("decimal(18,2)");
+                    b.Property<int>("ClassNumber")
+                        .HasColumnType("int");
 
                     b.Property<string>("FirstName")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("StudentNumber")
+                        .HasColumnType("int");
+
                     b.Property<string>("Surname")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("StudentNumber");
+                    b.HasKey("Id");
+
+                    b.HasIndex("StudentNumber")
+                        .IsUnique();
 
                     b.ToTable("Students");
+                });
+
+            modelBuilder.Entity("Exam.Domain.Etities.ClassExam", b =>
+                {
+                    b.HasOne("Exam.Domain.Etities.Lesson", "Lesson")
+                        .WithMany()
+                        .HasForeignKey("LessonId1");
+
+                    b.HasOne("Exam.Domain.Etities.Student", "Student")
+                        .WithMany()
+                        .HasForeignKey("StudentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Lesson");
+
+                    b.Navigation("Student");
                 });
 #pragma warning restore 612, 618
         }

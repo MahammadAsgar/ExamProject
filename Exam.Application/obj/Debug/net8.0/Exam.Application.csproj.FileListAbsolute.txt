@@ -15,3 +15,4 @@ C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Application\bin
 C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Application\obj\Debug\net8.0\Exam.Application.csproj.AssemblyReference.cache
 C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Application\obj\Debug\net8.0\Exam.Application.csproj.CopyComplete
 C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Application\obj\Debug\net8.0\Exam.Application.genruntimeconfig.cache
+C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Application\obj\Debug\net8.0\Exam.Application.sourcelink.json

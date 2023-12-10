@@ -1,4 +1,5 @@
 ﻿using Exam.Domain.Etities;
+using Exam.Infrasturucture.Dtos;
 using Exam.Infrasturucture.Services.Abstractions;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -16,7 +17,7 @@ namespace ExamProject.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult> PostStudent(Student  student)
+        public async Task<ActionResult> PostStudent(StudentDto  student)
         {
             await studentService.PostStudent(student);
             return Ok();
@@ -30,7 +31,7 @@ namespace ExamProject.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult> GetStudentsByClass(decimal classNum)
+        public async Task<ActionResult> GetStudentsByClass(int classNum)
         {
             var response = await studentService.GetStudentsByClass(classNum);
             return Ok(response);

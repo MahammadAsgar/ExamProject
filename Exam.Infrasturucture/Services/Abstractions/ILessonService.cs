@@ -1,4 +1,5 @@
 ﻿using Exam.Domain.Etities;
+using Exam.Infrasturucture.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,8 +10,8 @@ namespace Exam.Infrasturucture.Services.Abstractions
 {
     public interface ILessonService
     {
-        Task PostLesson(Lesson entity);
-        Task<IEnumerable<Lesson>> GetLessonsByClass(decimal classNum);
-        Task<IEnumerable<Lesson>> GetLessons();
+        Task PostLesson(LessonDto entity);
+        Task<IEnumerable<LessonDto>> GetLessonsByClass(int classNum);
+        Task<IEnumerable<LessonDto>> GetLessons();
     }
 }

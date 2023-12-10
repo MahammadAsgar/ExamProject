@@ -9,3 +9,4 @@ C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Domain\obj\Debu
 C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Domain\obj\Debug\net8.0\refint\Exam.Domain.dll
 C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Domain\obj\Debug\net8.0\Exam.Domain.pdb
 C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Domain\obj\Debug\net8.0\ref\Exam.Domain.dll
+C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Domain\obj\Debug\net8.0\Exam.Domain.sourcelink.json

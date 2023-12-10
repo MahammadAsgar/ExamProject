@@ -140,3 +140,6 @@ C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\ExamProject\obj\Debu
 C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\ExamProject\obj\Debug\net8.0\ref\ExamProject.dll
 C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\ExamProject\bin\Debug\net8.0\Exam.Infrasturucture.dll
 C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\ExamProject\bin\Debug\net8.0\Exam.Infrasturucture.pdb
+C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\ExamProject\obj\Debug\net8.0\ExamProject.sourcelink.json
+C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\ExamProject\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\ExamProject\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

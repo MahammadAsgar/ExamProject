@@ -15,3 +15,4 @@ C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Infrasturucture
 C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Infrasturucture\bin\Debug\net8.0\Exam.Domain.pdb
 C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Infrasturucture\obj\Debug\net8.0\Exam.Infrasturucture.csproj.AssemblyReference.cache
 C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Infrasturucture\obj\Debug\net8.0\Exam.Infrasturucture.csproj.CopyComplete
+C:\Users\Mahammad\Desktop\CourseManagmentSystem\ExamProject\Exam.Infrasturucture\obj\Debug\net8.0\Exam.Infrasturucture.sourcelink.json

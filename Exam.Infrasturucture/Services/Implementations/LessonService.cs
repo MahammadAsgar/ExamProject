@@ -1,6 +1,8 @@
-﻿using Exam.Application.Repositories;
+﻿using AutoMapper;
+using Exam.Application.Repositories;
 using Exam.Application.UnitOfWorks;
 using Exam.Domain.Etities;
+using Exam.Infrasturucture.Dtos;
 using Exam.Infrasturucture.Services.Abstractions;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -15,26 +17,31 @@ namespace Exam.Infrasturucture.Services.Implementations
     {
         readonly IGenericRepository<Lesson> repository;
         readonly IUnitOfWork unitOfWork;
-        public LessonService(IGenericRepository<Lesson> repository, IUnitOfWork unitOfWork)
+        readonly IMapper mapper;
+        public LessonService(IGenericRepository<Lesson> repository, IUnitOfWork unitOfWork, IMapper mapper)
         {
             this.repository = repository;
             this.unitOfWork = unitOfWork;
+            this.mapper = mapper;
         }
-        public async Task<IEnumerable<Lesson>> GetLessons()
+        public async Task<IEnumerable<LessonDto>> GetLessons()
         {
             var lessons = await repository.GetAll().ToListAsync();
-            return lessons;
+            var entities = mapper.Map<IEnumerable<LessonDto>>(lessons);
+            return entities;
         }
-
-        public async Task<IEnumerable<Lesson>> GetLessonsByClass(decimal classNum)
+        
+        public async Task<IEnumerable<LessonDto>> GetLessonsByClass(int classNum)
         {
             var lessons = await repository.Where(x => x.ClassNumber == classNum).ToListAsync();
-            return lessons;
+            var entities = mapper.Map<IEnumerable<LessonDto>>(lessons);
+            return entities;
         }
 
-        public async Task PostLesson(Lesson entity)
+        public async Task PostLesson(LessonDto entity)
         {
-            await repository.AddAsync(entity);
+            var lesson= mapper.Map<Lesson>(entity);
+            await repository.AddAsync(lesson);
             await unitOfWork.CommitAsync();
         }
     }

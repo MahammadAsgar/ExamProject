@@ -1,4 +1,5 @@
 ﻿using Exam.Domain.Etities;
+using Exam.Infrasturucture.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace Exam.Infrasturucture.Services.Abstractions
 {
     public interface IExamService
     {
-        Task PostExam(ClassExam entity);
-        Task<IEnumerable<ClassExam>> Exams();
+        Task PostExam(ClassExamDto entity);
+        Task<IEnumerable<ClassExamDto>> Exams();
     }
 }

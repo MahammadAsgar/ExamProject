@@ -21,7 +21,7 @@ builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepositor
 builder.Services.AddScoped<IExamService, ExamService>();
 builder.Services.AddScoped<ILessonService, LessonService>();
 builder.Services.AddScoped<IStudentService, StudentService>();
-
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 

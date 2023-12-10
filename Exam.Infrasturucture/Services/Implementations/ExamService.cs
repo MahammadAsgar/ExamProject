@@ -1,6 +1,8 @@
-﻿using Exam.Application.Repositories;
+﻿using AutoMapper;
+using Exam.Application.Repositories;
 using Exam.Application.UnitOfWorks;
 using Exam.Domain.Etities;
+using Exam.Infrasturucture.Dtos;
 using Exam.Infrasturucture.Services.Abstractions;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -15,20 +17,24 @@ namespace Exam.Infrasturucture.Services.Implementations
     {
         readonly IGenericRepository<ClassExam> repository;
         readonly IUnitOfWork unitOfWork;
-        public ExamService(IGenericRepository<ClassExam> repository, IUnitOfWork unitOfWork)
+        readonly IMapper mapper;
+        public ExamService(IGenericRepository<ClassExam> repository, IUnitOfWork unitOfWork, IMapper mapper)
         {
             this.repository = repository;
             this.unitOfWork = unitOfWork;
+            this.mapper = mapper;
         }
-        public async Task<IEnumerable<ClassExam>> Exams()
+        public async Task<IEnumerable<ClassExamDto>> Exams()
         {
             var exams = await repository.GetAll().ToListAsync();
-            return exams;
+            var entities = mapper.Map<IEnumerable<ClassExamDto>>(exams);
+            return entities;
         }
 
-        public async Task PostExam(ClassExam entity)
+        public async Task PostExam(ClassExamDto entity)
         {
-            await repository.AddAsync(entity);
+            var exam= mapper.Map<ClassExam>(entity);
+            await repository.AddAsync(exam);
             await unitOfWork.CommitAsync();
         }
     }

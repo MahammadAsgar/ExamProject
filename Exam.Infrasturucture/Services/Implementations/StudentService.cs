@@ -1,6 +1,8 @@
-﻿using Exam.Application.Repositories;
+﻿using AutoMapper;
+using Exam.Application.Repositories;
 using Exam.Application.UnitOfWorks;
 using Exam.Domain.Etities;
+using Exam.Infrasturucture.Dtos;
 using Exam.Infrasturucture.Services.Abstractions;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -15,26 +17,31 @@ namespace Exam.Infrasturucture.Services.Implementations
     {
         readonly IGenericRepository<Student> repository;
         readonly IUnitOfWork unitOfWork;
-        public StudentService(IGenericRepository<Student> repository, IUnitOfWork unitOfWork)
+        readonly IMapper mapper;
+        public StudentService(IGenericRepository<Student> repository, IUnitOfWork unitOfWork, IMapper mapper)
         {
             this.repository = repository;
             this.unitOfWork = unitOfWork;
+            this.mapper = mapper;
         }
-        public async Task<IEnumerable<Student>> GetStudents()
+        public async Task<IEnumerable<StudentDto>> GetStudents()
         {
             var students = await repository.GetAll().ToListAsync();
-            return students;
+            var entities = mapper.Map<IEnumerable<StudentDto>>(students);
+            return entities;
         }
 
-        public async Task<IEnumerable<Student>> GetStudentsByClass(decimal classNum)
+        public async Task<IEnumerable<StudentDto>> GetStudentsByClass(int classNum)
         {
             var students = await repository.Where(x => x.ClassNumber == classNum).ToListAsync();
-            return students;
+            var entities = mapper.Map<IEnumerable<StudentDto>>(students);
+            return entities;
         }
 
-        public async Task PostStudent(Student entity)
+        public async Task PostStudent(StudentDto entity)
         {
-            await repository.AddAsync(entity);
+            var student = mapper.Map<Student>(entity);
+            await repository.AddAsync(student);
             await unitOfWork.CommitAsync();
         }
     }

@@ -1,13 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "IR+f9TuMlO09+3fSatkm9odO7buoqxUMOWQJhW7bZniQIw6gEYHeyIlS5sS7ES7ZW6m6Nih3KZdeOgSYVQsfcA==",
+  "dgSpecHash": "g15S9ghoqK6DkRSsLOXcFOO6bkcKFMGfrQknN4+/gCrbei1fb9UAybthfV2ONI0OBfJrK/C5PzKorU1YDjm+yg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Mahammad\\Desktop\\CourseManagmentSystem\\ExamProject\\Exam.Infrasturucture\\Exam.Infrasturucture.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Mahammad\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Mahammad\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Mahammad\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\Mahammad\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
-    "C:\\Users\\Mahammad\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Mahammad\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Mahammad\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.1\\microsoft.data.sqlclient.5.1.1.nupkg.sha512",
     "C:\\Users\\Mahammad\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.1.0\\microsoft.data.sqlclient.sni.runtime.5.1.0.nupkg.sha512",
     "C:\\Users\\Mahammad\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.0\\microsoft.entityframeworkcore.8.0.0.nupkg.sha512",

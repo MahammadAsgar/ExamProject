@@ -19,14 +19,15 @@ namespace Exam.Application.Context
         {
             base.OnModelCreating(modelBuilder);
             modelBuilder.Entity<Lesson>()
-                .HasKey(x => x.LessonCode);
+                .HasIndex(x => x.LessonCode)
+                .IsUnique();
 
             modelBuilder.Entity<Student>()
-                .HasKey(x => x.StudentNumber);
+                .HasIndex(x=>x.StudentNumber)
+                .IsUnique();
 
             modelBuilder.Entity<ClassExam>()
-                .Property(x=>x.Result).HasColumnType("decimal(5,2)");
-                 
+                .Property(x => x.Result).HasColumnType("decimal(5,2)");
         }
 
         public DbSet<Lesson> Lessons { get; set; }
